@@ -1,0 +1,248 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center bg-no-repeat text-white py-20"
+    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-6 md:px-12 text-center">
+        <h1 class="text-4xl md:text-4xl font-black mb-6 uppercase">Careers</h1>
+        <p class="text-md md:text-md uppercase">
+            <a href="/" class="text-gray-300 hover:text-white">Home</a> > Careers
+        </p>
+    </div>
+</section>
+
+<!-- Open Roles Section -->
+<section class="py-20 bg-gray-50 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-semibold mb-4 uppercase">Open <span class="text-red-600">Roles</span></h2>
+    <p class="text-gray-600 text-lg">
+      Explore our current openings and become part of a growing, innovative team.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" data-aos="flip-right">
+    <!-- Marketing Executive -->
+    <div class="bg-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+      <div class="flex items-center justify-center mb-6 text-red-600 text-5xl">
+        <i class="fa-solid fa-bullhorn"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">Marketing Executive</h3>
+      <p class="text-gray-600 mb-6">
+        Help us grow our digital presence and connect with audiences globally through innovative campaigns.
+      </p>
+      <a href="https://wa.me/919876543210?text=Hello%20HR,%20I%20am%20interested%20in%20the%20Marketing%20Executive%20position."
+         target="_blank"
+         class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        Apply on WhatsApp
+      </a>
+    </div>
+
+    <!-- ERP Implementation -->
+    <div class="bg-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+      <div class="flex items-center justify-center mb-6 text-red-600 text-5xl">
+        <i class="fa-solid fa-network-wired"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">ERP Implementation</h3>
+      <p class="text-gray-600 mb-6">
+        Drive successful deployment of ERP solutions and ensure seamless integration for clients.
+      </p>
+      <a href="https://wa.me/919876543210?text=Hello%20HR,%20I%20am%20interested%20in%20the%20ERP%20Implementation%20Specialist%20role."
+         target="_blank"
+         class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        Apply on WhatsApp
+      </a>
+    </div>
+
+    <!-- Technical Support -->
+    <div class="bg-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+      <div class="flex items-center justify-center mb-6 text-red-600 text-5xl">
+        <i class="fa-solid fa-headset"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">Technical Support</h3>
+      <p class="text-gray-600 mb-6">
+        Provide expert assistance to clients, troubleshoot issues, and maintain high satisfaction levels.
+      </p>
+      <a href="https://wa.me/919876543210?text=Hello%20HR,%20I%20am%20interested%20in%20the%20Technical%20Support%20position."
+         target="_blank"
+         class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        Apply on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Our Culture -->
+<section class="py-20 bg-white px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6">Our Work Culture</h2>
+    <p class="text-gray-600 text-lg leading-relaxed mb-10">
+      We believe in creating a collaborative, transparent, and empowering environment where every voice matters. 
+      Our culture thrives on innovation, learning, and teamwork — we work hard, celebrate success, and grow together.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8" >
+      <div class="p-6 rounded-xl bg-gray-100" data-aos="flip-right">
+        <i class="fa-solid fa-lightbulb text-red-600 text-4xl mb-4"></i>
+        <h4 class="font-semibold text-lg mb-2">Innovation First</h4>
+        <p class="text-gray-600">We encourage fresh ideas and creative problem-solving at every level.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-100" data-aos="flip-right" data-aos-delay="200">
+        <i class="fa-solid fa-handshake text-red-600 text-4xl mb-4"></i>
+        <h4 class="font-semibold text-lg mb-2">Collaborative Teamwork</h4>
+        <p class="text-gray-600">We build together, learn together, and succeed together as one team.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-100" data-aos="flip-right" data-aos-delay="400">
+        <i class="fa-solid fa-chart-line text-red-600 text-4xl mb-4"></i>
+        <h4 class="font-semibold text-lg mb-2">Growth-Oriented</h4>
+        <p class="text-gray-600">We invest in personal and professional development for every team member.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="relative bg-fixed bg-cover bg-center py-20 px-6 text-white"
+  style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+  
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12">What Our Team Says</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
+        <p class="text-gray-200 mb-4 italic">"Working here has been a journey of learning and growth. The support and trust from management are unmatched!"</p>
+        <h4 class="font-semibold text-yellow-400">— Priya S, Marketing Team</h4>
+      </div>
+
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
+        <p class="text-gray-200 mb-4 italic">"I love the culture of collaboration. Every project challenges me and helps me level up my skills."</p>
+        <h4 class="font-semibold text-yellow-400">— Arjun M, Technical Support</h4>
+      </div>
+
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
+        <p class="text-gray-200 mb-4 italic">"From day one, I felt welcomed. The leadership genuinely cares about employee success."</p>
+        <h4 class="font-semibold text-yellow-400">— Neha K, ERP Specialist</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Hiring Process -->
+<section class="py-20 bg-white px-6 text-center">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold mb-8">Our Hiring Process</h2>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="p-6 bg-gray-100 rounded-lg" data-aos="flip-right" data-aos-delay="0">
+        <i class="fa-solid fa-file-alt text-red-600 text-4xl mb-3"></i>
+        <h4 class="font-semibold mb-2" >Step 1</h4>
+        <p class="text-gray-600">Submit your application via WhatsApp or email.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-lg" data-aos="flip-right" data-aos-delay="200">
+        <i class="fa-solid fa-comments text-red-600 text-4xl mb-3"></i>
+        <h4 class="font-semibold mb-2">Step 2</h4>
+        <p class="text-gray-600">Initial HR discussion to know you better.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-lg" data-aos="flip-right" data-aos-delay="400">
+        <i class="fa-solid fa-user-check text-red-600 text-4xl mb-3"></i>
+        <h4 class="font-semibold mb-2">Step 3</h4>
+        <p class="text-gray-600">Technical or role-based interview.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-lg" data-aos="flip-right" data-aos-delay="600">
+        <i class="fa-solid fa-handshake text-red-600 text-4xl mb-3"></i>
+        <h4 class="font-semibold mb-2">Step 4</h4>
+        <p class="text-gray-600">Offer & onboarding to join our amazing team!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-gray-50 py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+
+    <div class="space-y-4">
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-5 py-4 text-left text-lg font-semibold text-gray-900 focus:outline-none faq-toggle">
+          Do you offer remote positions?
+          <i class="fa-solid fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white px-5">
+          <p class="text-gray-600 py-4">Yes, depending on the role and department, we offer flexible remote and hybrid opportunities.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-5 py-4 text-left text-lg font-semibold text-gray-900 focus:outline-none faq-toggle">
+          How can I apply if my desired role is not listed?
+          <i class="fa-solid fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white px-5">
+          <p class="text-gray-600 py-4">You can send your resume via WhatsApp or email with the desired position, and we’ll contact you when suitable roles open up.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-5 py-4 text-left text-lg font-semibold text-gray-900 focus:outline-none faq-toggle">
+          What’s the work environment like?
+          <i class="fa-solid fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white px-5">
+          <p class="text-gray-600 py-4">Friendly, collaborative, and dynamic — we prioritize innovation and open communication.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Script -->
+<script>
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+
+      // Close all other FAQs
+      document.querySelectorAll('.faq-content').forEach(item => {
+        if (item !== content) {
+          item.style.maxHeight = null;
+          item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+        }
+      });
+
+      // Toggle the clicked one
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('rotate-180');
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+</script>
+
+
+<!-- Join Us CTA -->
+<section class="py-20 bg-red-600 text-white text-center px-4" data-aos="slide-right">
+  <h2 class="text-4xl font-bold mb-4 uppercase">Be Part of Our Mission <i class="fa-solid fa-rocket"></i></h2>
+  <p class="text-lg mb-8">
+    We’re passionate about innovation, creativity, and collaboration. Let’s grow together.
+  </p>
+  <a href="https://wa.me/919876543210?text=Hello%20HR,%20I%20would%20like%20to%20be%20considered%20for%20a%20position."
+     target="_blank"
+     class="bg-yellow-400 text-gray-900 font-semibold px-8 py-3 rounded-full hover:bg-yellow-300 transition">
+    Send Your Resume via WhatsApp
+  </a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,665 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
+
+<div class="relative w-full h-[70vh] md:h-[100vh] overflow-hidden" id="bannerCarousel">
+    <!-- Slide 1 -->
+    <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100">
+        <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?cs=srgb&dl=pexels-fauxels-3182773.jpg&fm=jpg"
+            alt="Digital Transformation" class="w-full h-full object-cover" />
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <div class="text-center px-6 md:px-12">
+                <h1 class="text-3xl md:text-5xl max-w-7xl font-extrabold text-white leading-tight uppercase">
+                    <span class="text-red-600">Your Reliable Partner for IT </span>
+                    <span class="text-white">Infrastructure & Technology</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                    Delivering trusted IT hardware, software, and digital solutions that drive business success across
+                    Qatar.
+                </p>
+                <a href="#about"
+                    class=" animate-bounce mt-12 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0">
+        <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?cs=srgb&dl=pexels-fauxels-3184325.jpg&fm=jpg"
+            alt="IT Services Meeting" class="w-full h-full object-cover" />
+        <!-- Overlay (same content) -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <div class="text-center px-6 md:px-12">
+                <h1 class="text-3xl md:text-5xl max-w-7xl font-extrabold text-white leading-tight uppercase">
+                    <span class="text-red-600">Your Reliable Partner for IT </span>
+                    <span class="text-white">Infrastructure & Technology</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                    Delivering trusted IT hardware, software, and digital solutions that drive business success across
+                    Qatar.
+                </p>
+                <a href="#about"
+                    class=" animate-bounce mt-12 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button id="prevBtn"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/40 hover:bg-white text-gray-800 font-bold p-3 rounded-full shadow-lg">
+        ‹
+    </button>
+    <button id="nextBtn"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/40 hover:bg-white text-gray-800 font-bold p-3 rounded-full shadow-lg">
+        ›
+    </button>
+
+    <!-- Indicators -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+        <div class="indicator w-3 h-3 rounded-full bg-white/50"></div>
+        <div class="indicator w-3 h-3 rounded-full bg-white/50"></div>
+    </div>
+</div>
+
+
+
+<!-- about us  -->
+
+<div id="about" class="relative bg-white overflow-hidden mt-16" id="about">
+    <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="50,0 100,0 50,100 0,100"></polygon>
+            </svg>
+
+            <div class="pt-1"></div>
+
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                <div class="sm:text-center lg:text-left">
+                    <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase" data-aos="fade-right">
+                        About Us
+                    </h2>
+
+                    <p class="text-justify" data-aos="fade-left">
+                        Marjaah Trading W.L.L. is a trusted technology partner based in Qatar, delivering end-to-end IT
+                        infrastructure, hardware, software, and digital solutions.
+                        We empower businesses to grow through secure, scalable, and innovative technologies, offering
+                        everything from enterprise networking and cybersecurity to ERP systems and digital
+                        transformation services.
+                        With a focus on reliability and customer success, Marjaah is built for business — trusted for
+                        growth.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" data-aos="fade-left">
+        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://lovinglifeco.com/wp-content/uploads/2023/05/happy-corporate-employees.jpg" alt="About">
+    </div>
+</div>
+
+
+
+
+<!-- What We Offer Section -->
+<section id="products" class="relative py-20 bg-fixed bg-cover bg-center"
+    style="background-image: url('https://previews.123rf.com/images/olgazhurba/olgazhurba1805/olgazhurba180500014/101212078-technology-background-and-abstract-digital-tech-circle-with-various-technological-elements.jpg');">
+    <!-- Overlay (for contrast) -->
+    <div class="absolute inset-0 bg-white/50"></div>
+
+    <!-- Content Wrapper -->
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
+        <!-- Section Title -->
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            What <span class="text-red-600">We Offer</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            Genuine IT hardware, licensed software, and smart technology for businesses.
+        </p>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Laptops & Computers"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-laptop text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Laptops & Computers</h3>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Printers & Scanners"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-print text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Printers & Scanners</h3>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Networking Devices"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-network-wired text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Networking Devices</h3>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/3861951/pexels-photo-3861951.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Licensed Software"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white px-4">
+                    <i class="fa-solid fa-shield-halved text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat mb-2">
+                        Licensed Software
+                    </h3>
+                    <p class="text-sm md:text-base font-archivo text-gray-200">
+                        Microsoft 365, AutoCAD, Kaspersky, Firewalls, Antivirus
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/610OBMKjKYL._AC_UF1000,1000_QL80_.jpg"
+                    alt="NFC Smart Cards"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white px-4">
+                    <i class="fa-solid fa-id-card text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat mb-2">NFC Smart Cards</h3>
+                    <p class="text-sm md:text-base font-archivo text-gray-200">
+                        Tap-to-share business cards
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Why Choose Us Section -->
+<section class="py-20 bg-gradient-to-b from-white to-[#E6F3FE]" id="why-choose-us">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            Why <span class="text-red-600">Choose Us</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            We empower businesses with reliable technology and end-to-end IT support.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition" data-aos="fade-up-right">
+                <i class="fa-solid fa-user-shield text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 font-archivo">Trusted Expertise</h3>
+                <p class="text-gray-600">
+                    Experienced professionals providing secure, scalable IT solutions that ensure performance and
+                    reliability.
+                </p>
+            </div>
+
+            <div class="p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition"data-aos="fade-down">
+                <i class="fa-solid fa-headset text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 font-archivo">24/7 Support</h3>
+                <p class="text-gray-600">
+                    Our technical support team is always available to ensure your business runs smoothly, day and night.
+                </p>
+            </div>
+
+            <div class="p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition" data-aos="fade-up-left">
+                <i class="fa-solid fa-handshake text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 font-archivo">Customer Commitment</h3>
+                <p class="text-gray-600">
+                    We value long-term relationships built on trust, transparency, and delivering measurable business
+                    success.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Industries We Serve -->
+<section class="py-20 bg-gradient-to-b from-[#E6F3FE] to-white" id="industries">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            Industries <span class="text-red-600">We Serve</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            Delivering tailored IT solutions for a wide range of industries.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-6 bg-[#E6F3FE] rounded-xl hover:bg-red-600 hover:text-white transition" data-aos="fade-down-right">
+                <i class="fa-solid fa-building text-4xl mb-4"></i>
+                <p class="font-semibold font-archivo">Corporate</p>
+            </div>
+            <div class="p-6 bg-[#E6F3FE] rounded-xl hover:bg-red-600 hover:text-white transition" data-aos="fade-down-right">
+                <i class="fa-solid fa-hospital text-4xl mb-4"></i>
+                <p class="font-semibold font-archivo">Healthcare</p>
+            </div>
+            <div class="p-6 bg-[#E6F3FE] rounded-xl hover:bg-red-600 hover:text-white transition" data-aos="fade-down-left">
+                <i class="fa-solid fa-graduation-cap text-4xl mb-4"></i>
+                <p class="font-semibold font-archivo">Education</p>
+            </div>
+            <div class="p-6 bg-[#E6F3FE] rounded-xl hover:bg-red-600 hover:text-white transition" data-aos="fade-down-left">
+                <i class="fa-solid fa-shop text-4xl mb-4"></i>
+                <p class="font-semibold font-archivo">Retail</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Our Partners -->
+<section class="py-20 bg-[#E6F3FE]" id="partners">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <!-- Title -->
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            Our <span class="text-red-600">Partners</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            Partnered with global leaders to deliver premium IT hardware, software, and technology solutions.
+        </p>
+
+        <!-- Scrolling Logo Carousel -->
+        <div class="relative overflow-hidden">
+            <!-- Animation Wrapper -->
+            <div class="flex items-center space-x-16 animate-scroll whitespace-nowrap">
+                <!-- Logos -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"
+                    class="h-10 inline-block" />
+                <img src="https://images.seeklogo.com/logo-png/26/1/hp-logo-png_seeklogo-265723.png" alt="HP"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lenovo_Corporate_Logo.png" alt="Lenovo"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png" alt="ASUS"
+                    class="h-10 inline-block" />
+                <img src="https://irp.cdn-website.com/2d1c006a/dms3rep/multi/canon-logo.svg" alt="Canon"
+                    class="h-10 inline-block" />
+                <img src="https://logos-world.net/wp-content/uploads/2023/01/Brother-Logo.png" alt="Epson"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco"
+                    class="h-10 inline-block" />
+                <img src="https://i.pinimg.com/736x/93/19/30/9319303deca2066b2a27bde640dcff97.jpg" alt="Brother"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png" alt="Logitech"
+                    class="h-10 inline-block" />
+
+                <!-- Duplicate set for smooth infinite loop -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"
+                    class="h-10 inline-block" />
+                <img src="https://images.seeklogo.com/logo-png/26/1/hp-logo-png_seeklogo-265723.png" alt="HP"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lenovo_Corporate_Logo.png" alt="Lenovo"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png" alt="ASUS"
+                    class="h-10 inline-block" />
+                <img src="https://irp.cdn-website.com/2d1c006a/dms3rep/multi/canon-logo.svg" alt="Canon"
+                    class="h-10 inline-block" />
+                <img src="https://i.pinimg.com/736x/93/19/30/9319303deca2066b2a27bde640dcff97.jpg" alt="Epson"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco"
+                    class="h-10 inline-block" />
+                <img src="https://logos-world.net/wp-content/uploads/2023/01/Brother-Logo.png" alt="Brother"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png" alt="Logitech"
+                    class="h-10 inline-block" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Add this CSS -->
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-scroll {
+        display: flex;
+        animation: scroll 25s linear infinite;
+        width: max-content;
+    }
+</style>
+
+
+
+<div class="max-w-7xl w-full mx-auto px-4 py-6">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            Client <span class="text-red-600">Testimonials</span>
+        </h2>
+
+        <p class="text-xl text-gray-600 mx-auto">
+            Hear what our customers say about their experience with our products and services.
+        </p>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative">
+        <!-- Navigation Arrows -->
+        <button id="prev"
+            class="nav-button absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-8 z-10 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white">
+            <i class="fas fa-chevron-left text-xl"></i>
+        </button>
+        <button id="next"
+            class="nav-button absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white">
+            <i class="fas fa-chevron-right text-xl"></i>
+        </button>
+
+        <!-- Carousel Track -->
+        <div id="carousel" class="overflow-hidden relative">
+            <div id="testimonial-track" class="flex transition-transform duration-500 ease-in-out">
+
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            "The service was exceptional from start to finish. The team went above and beyond to deliver
+                            exactly what we needed."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+                                alt="Sarah Johnson"
+                                class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                <p class="text-gray-500 text-sm">Marketing Director, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            "We've seen a 40% increase in productivity since implementing their solution. The onboarding
+                            process was seamless."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+                                alt="Michael Chen"
+                                class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                                <p class="text-gray-500 text-sm">CTO, InnovateSoft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            "Their attention to detail and customer support is unmatched. We've partnered with them for
+                            all our digital needs."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+                                alt="Emma Rodriguez"
+                                class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Emma Rodriguez</h4>
+                                <p class="text-gray-500 text-sm">CEO, DesignHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            "The ROI was evident within the first quarter. Their platform has become indispensable to
+                            our operations."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+                                alt="David Wilson"
+                                class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">David Wilson</h4>
+                                <p class="text-gray-500 text-sm">Operations Manager, GlobalLogix</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="flex justify-center mt-12 space-x-3">
+            <button
+                class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 active-dot"></button>
+            <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+            <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+            <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Call to Action -->
+<section class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white text-center" data-aos="slide-right">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Transform Your Business?
+        </h2>
+        <p class="text-lg md:text-xl mb-8 font-archivo">
+            Let's build reliable IT infrastructure that empowers your growth.
+        </p>
+        <a href="/contact"
+            class="inline-block bg-white text-red-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+
+
+
+<script>
+    const slides = document.querySelectorAll("#bannerCarousel .carousel-slide");
+    const indicators = document.querySelectorAll("#bannerCarousel .indicator");
+    let index = 0;
+
+    function showSlide(i) {
+        slides.forEach((slide, idx) =>
+            slide.style.opacity = idx === i ? "1" : "0"
+        );
+
+        indicators.forEach((dot, idx) =>
+            dot.classList.toggle("bg-white", idx === i)
+        );
+    }
+
+    document.getElementById("prevBtn").onclick = () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+    };
+
+    document.getElementById("nextBtn").onclick = () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    };
+
+    // Auto Slide
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    }, 5000); // 5 seconds
+
+    showSlide(index);
+</script>
+
+
+
+<!-- testimonial -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const track = document.getElementById('testimonial-track');
+        const cards = document.querySelectorAll('.testimonial-card');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        const dots = document.querySelectorAll('.indicator-dot');
+
+        let currentIndex = 0;
+        let visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+        const totalCards = cards.length;
+        let autoSlideInterval;
+
+        const cardWidth = () => cards[0].offsetWidth;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(${-currentIndex * cardWidth()}px)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active-dot', index === currentIndex);
+            });
+            cards.forEach(card => {
+                card.classList.remove('animate-fade');
+                void card.offsetWidth;
+                card.classList.add('animate-fade');
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % (totalCards - visibleCards + 1);
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + (totalCards - visibleCards + 1)) % (totalCards - visibleCards + 1);
+            updateCarousel();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+                resetAutoSlide();
+            });
+        });
+
+        const carousel = document.getElementById('carousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        carousel.addEventListener('mouseleave', startAutoSlide);
+
+        window.addEventListener('resize', () => {
+            const newVisibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            if (newVisibleCards !== visibleCards) {
+                visibleCards = newVisibleCards;
+                currentIndex = 0;
+                updateCarousel();
+            }
+        });
+
+        updateCarousel();
+        startAutoSlide();
+    });
+</script>
+
+
+{% endblock %}

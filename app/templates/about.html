@@ -1,0 +1,434 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center bg-no-repeat text-white py-20" 
+         style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <div class="relative container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-4xl font-black mb-6 uppercase">
+                About Us
+            </h1>
+            <p class="text-md md:text-md font-archivo uppercase mb-6">
+                <a href="/" class="text-gray-300 hover:text-white">Home</a> > About Us
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Story Section -->
+<section class="py-20 bg-white max-w-7xl mx-auto">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up-right">
+                <span class="text-red-600 font-semibold uppercase tracking-wide text-sm">Our Story</span>
+                <h2 class="text-3xl md:text-4xl font-black text-darkblue mt-4 mb-6 uppercase">
+                    Your Reliable Partner for IT <span class="text-red-600">Infrastructure & Technology</span>
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6 text-justify">
+                    At Marjaah Trading W.L.L., we are committed to delivering trusted IT hardware, software, and digital
+                    solutions that drive business success across Qatar. With years of expertise and a dedication to
+                    excellence, we empower organizations to achieve their technological goals.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed text-justify">
+                    From genuine hardware and licensed software to complete ERP systems and digital services, we provide
+                    end-to-end solutions tailored to your unique business needs.
+                </p>
+            </div>
+            <div class="relative" data-aos="fade-down-left">
+                <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg" alt="Team"
+                    class="rounded-2xl shadow-2xl w-full">
+                <div class="absolute -bottom-6 -left-6 bg-darkblue text-white p-6 rounded-xl shadow-lg" data-aos="slide-right">
+                    <div class="text-3xl font-bold">15+</div>
+                    <div class="text-sm">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Sets Us Apart -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+            <span class="text-red-600 font-semibold uppercase tracking-wide text-sm">Why Choose Us</span>
+            <h2 class="text-4xl md:text-4xl font-bold text-gray-900 mt-4 uppercase">What Sets <span class="text-red-600">Us Apart</span></h2>
+        </div>
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition text-center group" data-aos="fade-down" data-aos-delay="0">
+                <div
+                    class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-600 transition">
+                    <i class="fas fa-certificate text-3xl text-red-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Genuine Products</h3>
+                <p class="text-gray-600">Certified and authentic IT hardware and software</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition text-center group" data-aos="fade-down" data-aos-delay="100">
+                <div
+                    class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-600 transition">
+                    <i class="fas fa-cogs text-3xl text-red-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Tailored Solutions</h3>
+                <p class="text-gray-600">Custom ERP and software solutions for your industry</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition text-center group" data-aos="fade-down" data-aos-delay="200">
+                <div
+                    class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-600 transition">
+                    <i class="fas fa-tag text-3xl text-red-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Competitive Pricing</h3>
+                <p class="text-gray-600">Best value for enterprise-grade technology</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition text-center group" data-aos="fade-down" data-aos-delay="300">
+                <div
+                    class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-600 transition">
+                    <i class="fas fa-headset text-3xl text-red-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Support</h3>
+                <p class="text-gray-600">24/7 technical assistance from certified professionals</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition text-center group" data-aos="fade-down" data-aos-delay="400">
+                <div
+                    class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-600 transition">
+                    <i class="fas fa-shipping-fast text-3xl text-red-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Delivery</h3>
+                <p class="text-gray-600">Quick and reliable product delivery across Qatar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- What We Offer -->
+<section id="products" class="relative py-20 bg-fixed bg-cover bg-left bg-center"
+    style="background-image: url('https://img.freepik.com/free-vector/business-presentation-banner-with-blue-geometric-shape_1017-32330.jpg');">
+    <!-- Overlay (for contrast) -->
+    <div class="absolute inset-0 bg-white/10"></div>
+
+    <!-- Content Wrapper -->
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
+        <!-- Section Title -->
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            What <span class="text-red-600">We Offer</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            Genuine IT hardware, licensed software, and smart technology for businesses.
+        </p>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Laptops & Computers"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-laptop text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Laptops & Computers</h3>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Printers & Scanners"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-print text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Printers & Scanners</h3>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Networking Devices"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white">
+                    <i class="fa-solid fa-network-wired text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat">Networking Devices</h3>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.pexels.com/photos/3861951/pexels-photo-3861951.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Licensed Software"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white px-4">
+                    <i class="fa-solid fa-shield-halved text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat mb-2">
+                        Licensed Software
+                    </h3>
+                    <p class="text-sm md:text-base font-archivo text-gray-200">
+                        Microsoft 365, AutoCAD, Kaspersky, Firewalls, Antivirus
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/610OBMKjKYL._AC_UF1000,1000_QL80_.jpg"
+                    alt="NFC Smart Cards"
+                    class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div
+                    class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-500 flex flex-col items-center justify-center text-white px-4">
+                    <i class="fa-solid fa-id-card text-5xl mb-4 text-lightblue"></i>
+                    <h3 class="text-2xl font-bold font-caveat mb-2">NFC Smart Cards</h3>
+                    <p class="text-sm md:text-base font-archivo text-gray-200">
+                        Tap-to-share business cards
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Complete IT & ERP Solutions -->
+<section class="py-20 bg-gradient-to-r from-white to-blue-100 text-white">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+            <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+                Complete IT & <span class="text-red-600">ERP Solutions</span>
+            </h2>
+            <p class="text-xl text-gray-900 mt-4 max-w-3xl mx-auto">
+                Tailored technology solutions for every industry
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition" data-aos="fade-down" data-aos-delay="0">
+                <i class="fas fa-server text-3xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-black">IT Infrastructure</h3>
+                <p class="text-gray-400">Complete network setup and infrastructure management</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition" data-aos="fade-down" data-aos-delay="100">
+                <i class="fas fa-box text-3xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-black">Hardware Supply</h3>
+                <p class="text-gray-400">Genuine IT equipment from trusted manufacturers</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition" data-aos="fade-down" data-aos-delay="200">
+                <i class="fas fa-lock text-3xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-black">Cybersecurity</h3>
+                <p class="text-gray-400">Advanced security solutions and threat protection</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition" data-aos="fade-down" data-aos-delay="300">
+                <i class="fas fa-wrench text-3xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-black">Maintenance & Support</h3>
+                <p class="text-gray-400">24/7 technical support and system maintenance</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition" data-aos="fade-down" data-aos-delay="400">
+                <i class="fas fa-chart-line text-3xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-black">ERP Systems</h3>
+                <p class="text-gray-400">Custom enterprise resource planning solutions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Digital Services -->
+<section class="py-20 bg-gradient-to-r from-blue-100 to-white">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div  data-aos="fade-down-right">
+                <span class="text-red-600 font-semibold uppercase tracking-wide text-sm">Digital Services</span>
+                <h2 class="text-4xl md:text-4xl font-bold text-gray-900 mt-4 mb-6 uppercase">
+                    Complete Digital <span class="text-red-600">Presence</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Build and grow your brand with our creative and technical digital services
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-code text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Website & App Development</h4>
+                            <p class="text-gray-600">Custom web and mobile applications for your business</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shopping-cart text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">E-Commerce & ERP</h4>
+                            <p class="text-gray-600">Online store setup and business management systems</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-bullhorn text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Digital Marketing & SEO</h4>
+                            <p class="text-gray-600">Drive traffic and grow your online presence</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-palette text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Branding & Logo Design</h4>
+                            <p class="text-gray-600">Professional brand identity and visual design</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-video text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Video & Brochure Creation</h4>
+                            <p class="text-gray-600">Engaging multimedia content for marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-8">
+                    <a href="/services"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg transition inline-flex items-center gap-2">
+                        <i class="fas fa-eye"></i> View Services
+                    </a>
+                    <a href="/contact"
+                        class="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg transition inline-flex items-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Request Quote
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Digital Services" data-aos="fade-up-right"
+                    class="rounded-2xl shadow-2xl w-full">
+                <div class="absolute -top-6 -right-6 bg-white p-6 rounded-xl shadow-xl" data-aos="slide-left">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-4xl text-green-500"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">500+</div>
+                            <div class="text-sm text-gray-600">Projects Delivered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- trusted  -->
+
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-scroll {
+        display: flex;
+        animation: scroll 25s linear infinite;
+        width: max-content;
+    }
+</style>
+
+
+<section class="py-20 bg-gradient-to-r from-white to-blue-100" id="partners">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <!-- Title -->
+        <h2 class="my-6 text-2xl tracking-tight font-bold text-darkblue sm:text-3xl md:text-4xl uppercase">
+            Our <span class="text-red-600">Partners</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-700 font-archivo mb-12">
+            Partnered with global leaders to deliver premium IT hardware, software, and technology solutions.
+        </p>
+
+        <!-- Scrolling Logo Carousel -->
+        <div class="relative overflow-hidden">
+            <!-- Animation Wrapper -->
+            <div class="flex items-center space-x-16 animate-scroll whitespace-nowrap">
+                <!-- Logos -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft"
+                    class="h-12 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"
+                    class="h-10 inline-block" />
+                <img src="https://images.seeklogo.com/logo-png/26/1/hp-logo-png_seeklogo-265723.png" alt="HP"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lenovo_Corporate_Logo.png" alt="Lenovo"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png" alt="ASUS"
+                    class="h-10 inline-block" />
+                <img src="https://irp.cdn-website.com/2d1c006a/dms3rep/multi/canon-logo.svg" alt="Canon"
+                    class="h-10 inline-block" />
+                <img src="https://logos-world.net/wp-content/uploads/2023/01/Brother-Logo.png" alt="Epson"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco"
+                    class="h-10 inline-block" />
+                <img src="https://i.pinimg.com/736x/93/19/30/9319303deca2066b2a27bde640dcff97.jpg" alt="Brother"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png" alt="Logitech"
+                    class="h-10 inline-block" />
+
+                <!-- Duplicate set for smooth infinite loop -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft"
+                    class="h-12 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"
+                    class="h-10 inline-block" />
+                <img src="https://images.seeklogo.com/logo-png/26/1/hp-logo-png_seeklogo-265723.png" alt="HP"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lenovo_Corporate_Logo.png" alt="Lenovo"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png" alt="ASUS"
+                    class="h-10 inline-block" />
+                <img src="https://irp.cdn-website.com/2d1c006a/dms3rep/multi/canon-logo.svg" alt="Canon"
+                    class="h-10 inline-block" />
+                <img src="https://i.pinimg.com/736x/93/19/30/9319303deca2066b2a27bde640dcff97.jpg" alt="Epson"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco"
+                    class="h-10 inline-block" />
+                <img src="https://logos-world.net/wp-content/uploads/2023/01/Brother-Logo.png" alt="Brother"
+                    class="h-10 inline-block" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png" alt="Logitech"
+                    class="h-10 inline-block" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white" data-aos="slide-right">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+        <h2 class="text-4xl md:text-4xl font-black mb-6 uppercase">Ready to Transform Your Business?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Let's discuss how our IT solutions can drive your success
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="/contact"
+                class="bg-white text-red-600 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition transform hover:scale-105 inline-flex items-center gap-2">
+                <i class="fas fa-phone"></i> Contact Us Today
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+<!-- Add Font Awesome if not already in base.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+{% endblock %}
