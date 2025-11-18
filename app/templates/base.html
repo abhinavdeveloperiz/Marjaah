@@ -125,7 +125,7 @@
     </div>
 
     <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 right-0 bg-white/90 shadow z-50">
+    <header class="fixed top-0 left-0 right-0 backdrop-blur-lg bg-white/80 shadow-lg z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 
             <!-- Logo -->
@@ -134,17 +134,17 @@
                 <span class="sr-only">Website Logo</span>
             </a>
 
-            <!-- Mobile: Get a Quote + Hamburger -->
+            <!-- Mobile Right Side -->
             <div class="flex items-center gap-3 md:hidden">
 
-                <!-- Get a Quote Button (Mobile Only) -->
+                <!-- Get a Quote Button -->
                 <a href="{% url 'contact' %}"
-                    class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:bg-blue-700 transition">
+                    class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                     Get a Quote
                 </a>
 
                 <!-- Mobile Menu Button -->
-                <button id="menu-toggle" class="text-gray-700">
+                <button id="menu-toggle" class="text-gray-700 hover:text-blue-600 transition">
                     <svg id="menu-icon" class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
@@ -153,37 +153,64 @@
             </div>
 
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
-                <a href="{% url 'home' %}" class="hover:text-blue-600">Home</a>
-                <a href="{% url 'about' %}" class="hover:text-blue-600">About</a>
-                <a href="{% url 'services' %}" class="hover:text-blue-600">Services</a>
-                <a href="{% url 'careers' %}" class="hover:text-blue-600">Careers</a>
-                <a href="{% url 'gallery' %}" class="hover:text-blue-600">Gallery</a>
-                <a href="{% url 'contact' %}" class="hover:text-blue-600">Contact</a>
+            <nav class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+
+                <!-- Menu Items With Underline Animation -->
+                <a href="{% url 'home' %}" class="relative px-1 group">
+                    <span class="hover:text-blue-600 transition">Home</span>
+                    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 
+                    transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="{% url 'about' %}" class="relative px-1 group">
+                    <span class="hover:text-blue-600 transition">About</span>
+                    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 
+                    transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="{% url 'services' %}" class="relative px-1 group">
+                    <span class="hover:text-blue-600 transition">Services</span>
+                    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 
+                    transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="{% url 'careers' %}" class="relative px-1 group">
+                    <span class="hover:text-blue-600 transition">Careers</span>
+                    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 
+                    transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="{% url 'gallery' %}" class="relative px-1 group">
+                    <span class="hover:text-blue-600 transition">Gallery</span>
+                    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 
+                    transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <!-- CTA Button -->
+                <a href="{% url 'contact' %}"
+                    class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center">
+                    Get a Quote
+                </a>
+
             </nav>
-
         </div>
 
-        <!-- Mobile Dropdown (Animated) -->
+        <!-- Mobile Dropdown -->
         <div id="mobile-menu"
-            class="max-h-0 overflow-hidden transition-all duration-500 md:hidden flex flex-col bg-white border-t text-center">
-            <a href="{% url 'home' %}" class="py-8 border-b hover:bg-gray-100">Home</a>
-            <a href="{% url 'about' %}" class="py-8 border-b hover:bg-gray-100">About</a>
-            <a href="{% url 'services' %}" class="py-8 border-b hover:bg-gray-100">Services</a>
-            <a href="{% url 'careers' %}" class="py-8 border-b hover:bg-gray-100">Careers</a>
-            <a href="{% url 'gallery' %}" class="py-8 border-b hover:bg-gray-100">Gallery</a>
-        </div>
+            class="max-h-0 overflow-hidden transition-all duration-500 md:hidden flex flex-col bg-white border-t text-center shadow-lg">
 
+            <a href="{% url 'home' %}" class="py-6 border-b hover:bg-gray-100">Home</a>
+            <a href="{% url 'about' %}" class="py-6 border-b hover:bg-gray-100">About</a>
+            <a href="{% url 'services' %}" class="py-6 border-b hover:bg-gray-100">Services</a>
+            <a href="{% url 'careers' %}" class="py-6 border-b hover:bg-gray-100">Careers</a>
+            <a href="{% url 'gallery' %}" class="py-6 border-b hover:bg-gray-100">Gallery</a>
+          
+
+        </div>
     </header>
 
 
 
-
-
-
-
-
-    <!-- Page Content -->
     <!-- <main id="content" class="hidden pt-32"> -->
     {% block content %}
     {% endblock %}
